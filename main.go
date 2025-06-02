@@ -28,6 +28,7 @@ func main() {
 		"-filter_complex",
 		"[1]drawtext=text='Nigger':fontsize=48:fontcolor=#00000077[totile];[totile]tile=25x25[tooverlay];[0:v][tooverlay]overlay=x=sin(n / 5)*5:y=sin(n / 3) * 2",
 		"-shortest",
+		"-threads", "4",
 		outputFile,
 	)
 
